@@ -1,0 +1,17 @@
+.pagination {
+  flex-grow: 0;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  align-items: center;
+  margin-top: 16px;
+  button {
+    padding: 10px 20px;
+    background-color: rgb(173, 173, 173);
+    border-radius: 20px;
+    &:hover {
+      background-color: rgb(119, 118, 118);
+    }
+  }
+}

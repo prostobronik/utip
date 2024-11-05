@@ -1,0 +1,24 @@
+th,
+td {
+  padding: 4px;
+}
+
+.table__header {
+  border: 1px solid rgb(171, 171, 171);
+  position: relative;
+  padding: 10px 15px;
+}
+
+.resizer {
+  cursor: col-resize;
+  height: 100%;
+  position: absolute;
+  right: -4px;
+  top: 0;
+  width: 8px;
+  z-index: 1;
+}
+
+.resizer_first {
+  left: -4px;
+}

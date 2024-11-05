@@ -1,0 +1,17 @@
+.buttons_wrapper {
+  flex-grow: 0;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin: 16px auto;
+
+  button {
+    padding: 10px 20px;
+    background-color: rgb(160, 159, 159);
+    border-radius: 20px;
+    &:hover {
+      background-color: rgb(119, 118, 118);
+    }
+  }
+}
