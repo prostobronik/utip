@@ -9,10 +9,16 @@ const HomeControls = () => {
     navigate("/add");
   };
 
+  const isPlaceholderShown = peopleStore.status === "init";
+
   return (
     <div className={styles.buttons_wrapper}>
       <button onClick={action(() => peopleStore.fetchPeople())}>Запрос</button>
-      <button onClick={action(() => peopleStore.clearPeople())}>Удалить</button>
+      {!isPlaceholderShown && (
+        <button onClick={action(() => peopleStore.clearPeople())}>
+          Удалить
+        </button>
+      )}
       <button onClick={() => navigateToAddPage()}>Добавить </button>
     </div>
   );

@@ -16,7 +16,6 @@ export interface colsData {
 const Table: FC<{ rowsData: People[]; colsData: colsData[] }> = observer(
   ({ rowsData, colsData }) => {
     const [draggingRowId, setDraggingRowId] = useState<null | string>(null);
-
     const init = () => {
       const tableHeadCells = [
         ...document.querySelectorAll(`.${headStyles.table__header}`),
